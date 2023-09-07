@@ -1,9 +1,14 @@
+# server
+-ใช้ อันนี้https://github.com/janjao937/todolist-api-v2.git
+-npm run dev
+- auto open browser localhost:3000
+
 # 0 Setup Project
 
 - `npx create-react-app <project-name>`
 - `cd <project-name>`
-- `npm start` or `npm run start` or `npx react-scripts start`
-- auto open browser localhost:3000
+
+
 
 # 1 About Project
 
