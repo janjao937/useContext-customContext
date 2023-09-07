@@ -1,0 +1,26 @@
+@import '../../../styles/global.scss';
+
+.search {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: $text-base;
+    color: $grey-400;
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid $grey-50;
+    font-size: $text-base;
+    outline: none;
+  }
+}

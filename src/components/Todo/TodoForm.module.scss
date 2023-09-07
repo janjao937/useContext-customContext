@@ -1,0 +1,43 @@
+@import '../../styles/global.scss';
+
+.todo__form__container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 10px;
+  border: 1px solid $grey-light;
+}
+
+.todo__form__input {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1.4rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.todo__form__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.todo__error {
+  justify-self: start;
+  padding: 10px;
+  font-size: $text-base;
+  font-weight: 600;
+  color: $primary;
+  flex: 1;
+}
+.todo__form__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

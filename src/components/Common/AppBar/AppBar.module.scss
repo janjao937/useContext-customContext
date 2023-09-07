@@ -1,0 +1,32 @@
+@import '../../../styles/global.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: $primary;
+  height: $header-height;
+  padding: 5px 30px;
+
+  &__logo {
+    font-size: $text-2xl;
+    color: $white;
+    padding-left: 15px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__text {
+    flex: 1;
+    color: $white;
+
+    & > h1 {
+      font-size: $text-2xl;
+    }
+  }
+
+  &__search {
+    min-width: 300px;
+  }
+}

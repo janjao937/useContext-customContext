@@ -1,0 +1,71 @@
+@import '../../styles/global.scss';
+
+.todo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: $font-base;
+  color: $grey-600;
+  padding: $todo-content-padding;
+  transition-duration: 0.1s;
+
+  &:hover {
+    background-color: $grey-100;
+  }
+
+  &__checkbox {
+    height: $circle;
+    width: $circle;
+    display: block;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $circle * 0.8;
+
+    &__icon {
+      display: none;
+    }
+
+    &:hover &__icon {
+      display: inline;
+    }
+
+    &__done &__icon {
+      display: inline;
+    }
+  }
+
+  &__task {
+    flex: 1;
+    font-size: $text-xl;
+
+    &__done {
+      text-decoration: line-through;
+    }
+  }
+
+  &__date {
+  }
+
+  &__action {
+    flex-basis: 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    font-size: $text-base;
+  }
+
+  &__edit,
+  &__delete {
+    display: block;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

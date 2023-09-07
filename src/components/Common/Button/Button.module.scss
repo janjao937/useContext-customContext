@@ -1,0 +1,20 @@
+@import '../../../styles/global.scss';
+
+.btn {
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+
+  &__primary {
+    background-color: $primary;
+    color: white;
+  }
+
+  &__secondary {
+    background-color: $grey-light;
+    color: black;
+  }
+}
